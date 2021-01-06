@@ -8,7 +8,7 @@
     <title>GloryCBC Devotion Sharing</title>
     <script>
       var src = location.search.split("?")[1] || "https://glorycbcdevotion.home.blog/";
-      window.history.replaceState({}, document.title, "/"); // clear query string
+      window.history.replaceState({}, document.title, location.pathname); // clear query string
       document.addEventListener("DOMContentLoaded", function(event) { 
         var iframe = document.querySelector("iframe");
         iframe.src = src;
