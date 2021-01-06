@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>GloryCBC Devotion Sharing</title>
+    <script>
+      var src = location.search.split("?")[1] || "https://glorycbcdevotion.home.blog/";
+      window.history.replaceState({}, document.title, "/"); // clear query string
+      document.addEventListener("DOMContentLoaded", function(event) { 
+        var iframe = document.querySelector("iframe");
+        iframe.src = src;
+        iframe.height = window.innerHeight + "px";
+      });
+  </script>
+  </head>  
+  <body style="margin: 0">
+    <iframe style="margin: 0; width: 100%; border: none;"/>
+  </body>
+  
+</html>
